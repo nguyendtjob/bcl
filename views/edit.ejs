@@ -1,0 +1,174 @@
+<div class="container-fluid">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/Article/adminlist">Article</a></li>
+    <li class="breadcrumb-item active">Edit</li>
+  </ol>
+
+  <h1 class="display-5">Edit Article</h1>
+  <form method="post" action="/Article/update/<%= item.id %>" enctype="multipart/form-data">
+    <input type="hidden" name="_csrf" value="<%= _csrf %>" />
+
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>title</b></label>
+			<input type="text" name="title" class="form-control" value="<%= item.title? item.title:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>journal</b></label>
+			<input type="text" name="journal" class="form-control" value="<%= item.journal? item.journal:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>year</b></label>
+			<input type="text" name="year" class="form-control" value="<%= item.year? item.year:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>stage</b></label>
+			<input type="text" name="stage" class="form-control" value="<%= item.stage? item.stage:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>molecular_classification</b></label>
+			<input type="text" name="molecular_classification" class="form-control" value="<%= item.molecular_classification? item.molecular_classification:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>subpopulation</b></label>
+			<input type="text" name="subpopulation" class="form-control" value="<%= item.subpopulation? item.subpopulation:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>exp_type</b></label>
+			<input type="text" name="exp_type" class="form-control" value="<%= item.exp_type? item.exp_type:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>molecule_name</b></label>
+			<input type="text" name="molecule_name" class="form-control" value="<%= item.molecule_name? item.molecule_name:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>setting</b></label>
+			<input type="text" name="setting" class="form-control" value="<%= item.setting? item.setting:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>study_phase</b></label>
+			<input type="text" name="study_phase" class="form-control" value="<%= item.study_phase? item.study_phase:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>comp_type</b></label>
+			<input type="text" name="comp_type" class="form-control" value="<%= item.comp_type? item.comp_type:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>molecule_name_2</b></label>
+			<input type="text" name="molecule_name_2" class="form-control" value="<%= item.molecule_name_2? item.molecule_name_2:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>settting_2</b></label>
+			<input type="text" name="settting_2" class="form-control" value="<%= item.settting_2? item.settting_2:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>mPFS_exp</b></label>
+			<input type="text" name="mPFS_exp" class="form-control" value="<%= item.mPFS_exp? item.mPFS_exp:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>mPFS_comp</b></label>
+			<input type="text" name="mPFS_comp" class="form-control" value="<%= item.mPFS_comp? item.mPFS_comp:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>mPFS_HR</b></label>
+			<input type="text" name="mPFS_HR" class="form-control" value="<%= item.mPFS_HR? item.mPFS_HR:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>mPFS_significance</b></label>
+			<input type="text" name="mPFS_significance" class="form-control" value="<%= item.mPFS_significance? item.mPFS_significance:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>mOS_exp</b></label>
+			<input type="text" name="mOS_exp" class="form-control" value="<%= item.mOS_exp? item.mOS_exp:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>mOS_comp</b></label>
+			<input type="text" name="mOS_comp" class="form-control" value="<%= item.mOS_comp? item.mOS_comp:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>mOS_HR</b></label>
+			<input type="text" name="mOS_HR" class="form-control" value="<%= item.mOS_HR? item.mOS_HR:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>mOS_significance</b></label>
+			<input type="text" name="mOS_significance" class="form-control" value="<%= item.mOS_significance? item.mOS_significance:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>G3_4_AE_exp</b></label>
+			<input type="text" name="G3_4_AE_exp" class="form-control" value="<%= item.G3_4_AE_exp? item.G3_4_AE_exp:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>G3_4_AE_comp</b></label>
+			<input type="text" name="G3_4_AE_comp" class="form-control" value="<%= item.G3_4_AE_comp? item.G3_4_AE_comp:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>conclusion</b></label>
+			<input type="text" name="conclusion" class="form-control" value="<%= item.conclusion? item.conclusion:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>comment</b></label>
+			<input type="text" name="comment" class="form-control" value="<%= item.comment? item.comment:"" %>">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="col-md-4">
+			<label><b>pdf</b></label><br/>
+			<input type="hidden" name="pdf" value="<%= item.pdf ? item.pdf:''%>"</>
+			<input type="file" name="file"/>
+		</div>
+	</div><br/>
+
+
+    <hr>
+    <button type="submit" class="btn btn-primary" value="Save changes">Save changes</button>
+  </form>
+</div>
+
