@@ -429,7 +429,7 @@
         <td><%= item.G3_4_AE_exp? item.G3_4_AE_exp:"" %></td>
         <td><%= item.G3_4_AE_comp? item.G3_4_AE_comp:"" %></td>
         <td><%= item.conclusion? item.conclusion:"" %></td>
-        <td class="comment-cell"><% if(item.comment) {%>
+        <td class="comment-cell"><% if(item.conclusion) {%>
           <button class="btn btn-outline-secondary btn-sm oi oi-copywriting" data-toggle="tooltip" data-placement="left" title='<%= item.conclusion %>'></button>
           <% } %>
         </td>
