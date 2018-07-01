@@ -251,9 +251,10 @@ table.dataTable thead .sorting_desc::after {
   width: 30px !important;
 }
 
-input {
+.column_filter {
   width: 70px;
 }
+
 
 
 /*
