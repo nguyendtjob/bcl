@@ -408,13 +408,13 @@
           <a href="details/<%= item.id %>" target="_blank"><button class="btn btn-outline-secondary oi oi-document"></button></a>
           <% } %>
         </td>
+        <td><%= item.study_phase? item.study_phase:"" %></td>
         <td><%= item.stage? item.stage:"" %></td>
         <td><%= item.molecular_classification? item.molecular_classification:"" %></td>
         <td><%= item.subpopulation? item.subpopulation:"" %></td>
         <td><%= item.exp_type? item.exp_type:"" %></td>
         <td><%= item.molecule_name? item.molecule_name:"" %></td>
         <td><%= item.setting? item.setting:"" %></td>
-        <td><%= item.study_phase? item.study_phase:"" %></td>
         <td><%= item.comp_type? item.comp_type:"" %></td>
         <td><%= item.molecule_name_2? item.molecule_name_2:"" %></td>
         <td><%= item.settting_2? item.settting_2:"" %></td>
