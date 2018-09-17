@@ -5,11 +5,7 @@
 <script src="/js/dataTables.buttons.min.js"></script>
 <script src="/js/buttons.print.js"></script>
 <script src="/js/afnFilteringYear.js"></script>
-<script src="/js/afnFilteringmPFSexp.js"></script>
-<script src="/js/afnFilteringmPFScomp.js"></script>
 <script src="/js/afnFilteringmPFSHR.js"></script>
-<script src="/js/afnFilteringmOSexp.js"></script>
-<script src="/js/afnFilteringmOScomp.js"></script>
 <script src="/js/afnFilteringmOSHR.js"></script>
 <script src="/js/afnFilteringg34AEexp.js"></script>
 <script src="/js/afnFilteringg34AEcomp.js"></script>
@@ -381,14 +377,14 @@
         <th data-toggle="tooltip" data-placement="top" data-html="true" title="Type of treatment in the control arm">Comparative Treatment<br/><input class="filter column_filter" type="text" data-column="11" /></th>
         <th data-toggle="tooltip" data-placement="top" data-html="true" title="Name of the control drug">Molecule name<br/><input class="filter column_filter" type="text" data-column="12" /></th>
         <th data-toggle="tooltip" data-placement="top" data-html="true" title="Setting of the treatment in the control arm">Setting<br/><input class="filter column_filter" type="text" data-column="13" /></th>
-        <th data-toggle="tooltip" data-placement="top" data-html="true" title="median PFS in the experimental arm">m PFS experimental<br/><select id="typemPFSexp"><option value="=">=</option><option value="<"><</option><option value=">">></option></select><br/><input id="rangemPFSexp" class="filter range short_filter" type="text" data-column="14" /></th>
-        <th data-toggle="tooltip" data-placement="top" data-html="true" title="median PFS in the control arm">m PFS comparator<br/><select id="typemPFScomp"><option value="=">=</option><option value="<"><</option><option value=">">></option></select><br/><input id="rangemPFScomp" class="filter range short_filter" type="text" data-column="15" /></th>
-        <th data-toggle="tooltip" data-placement="top" data-html="true" title="median PFS Hazard Ratio">m PFS HR<br/><select id="typemPFSHR"><option value="=">=</option><option value="<"><</option><option value=">">></option></select><br/><input id="rangemPFSHR" class="filter range short_filter" type="text" data-column="16" /></th>
-        <th data-toggle="tooltip" data-placement="top" data-html="true" title="Significance of the hazard ratio for PFS">m PFS significance<br/><input class="filter column_filter" type="text" data-column="17" /></th>
-        <th data-toggle="tooltip" data-placement="top" data-html="true" title="median OS in the experimental arm">m OS experimental<br/><select id="typemOSexp"><option value="=">=</option><option value="<"><</option><option value=">">></option></select><br/><input id="rangemOSexp" class="filter range short_filter" type="text" data-column="18" /></th>
-        <th data-toggle="tooltip" data-placement="top" data-html="true" title="median OS in the control arm">m OS comparator<br/><select id="typemOScomp"><option value="=">=</option><option value="<"><</option><option value=">">></option></select><br/><input id="rangemOScomp" class="filter range short_filter" type="text" data-column="19" /></th>
-        <th data-toggle="tooltip" data-placement="top" data-html="true" title="median OS Hazard Ratio">m OS HR<br/><select id="typemOSHR"><option value="=">=</option><option value="<"><</option><option value=">">></option></select><br/><input id="rangemOSHR" class="filter range short_filter" type="text" data-column="20" /></th>
-        <th data-toggle="tooltip" data-placement="top" data-html="true" title="Significance of the hazard ratio for OS">m OS significance<br/><input class="filter column_filter" type="text" data-column="21" /></th>
+        <th data-toggle="tooltip" data-placement="top" data-html="true" title="PFS in the experimental arm">PFS experimental<br/><input id="rangemPFSexp" class="filter range short_filter" type="text" data-column="14" /></th>
+        <th data-toggle="tooltip" data-placement="top" data-html="true" title="PFS in the control arm">PFS comparator<br/><input id="rangemPFScomp" class="filter range short_filter" type="text" data-column="15" /></th>
+        <th data-toggle="tooltip" data-placement="top" data-html="true" title="PFS Hazard Ratio">PFS HR<br/><select id="typemPFSHR"><option value="=">=</option><option value="<"><</option><option value=">">></option></select><br/><input id="rangemPFSHR" class="filter range short_filter" type="text" data-column="16" /></th>
+        <th data-toggle="tooltip" data-placement="top" data-html="true" title="Significance of the hazard ratio for PFS">PFS significance<br/><input class="filter column_filter" type="text" data-column="17" /></th>
+        <th data-toggle="tooltip" data-placement="top" data-html="true" title="OS in the experimental arm">OS experimental<br/><input id="rangemOSexp" class="filter range short_filter" type="text" data-column="18" /></th>
+        <th data-toggle="tooltip" data-placement="top" data-html="true" title="OS in the control arm">OS comparator<br/><input id="rangemOScomp" class="filter range short_filter" type="text" data-column="19" /></th>
+        <th data-toggle="tooltip" data-placement="top" data-html="true" title="OS Hazard Ratio">OS HR<br/><select id="typemOSHR"><option value="=">=</option><option value="<"><</option><option value=">">></option></select><br/><input id="rangemOSHR" class="filter range short_filter" type="text" data-column="20" /></th>
+        <th data-toggle="tooltip" data-placement="top" data-html="true" title="Significance of the hazard ratio for OS">OS significance<br/><input class="filter column_filter" type="text" data-column="21" /></th>
         <th data-toggle="tooltip" data-placement="top" data-html="true" title="Rate of grade 3-4 adverse events in the experimental arm">G3-4 AE experimental<br/><select id="typeg34AEexp"><option value="=">=</option><option value="<"><</option><option value=">">></option></select><br/><input id="rangeg34AEexp" class="filter range short_filter" type="text" data-column="22" /></th>
         <th data-toggle="tooltip" data-placement="top" data-html="true" title="Rate of grade 3-4 adverse events in the control arm">G3-4 AE comparator<br/><select id="typeg34AEcomp"><option value="=">=</option><option value="<"><</option><option value=">">></option></select><br/><input id="rangeg34AEcomp" class="filter range short_filter" type="text" data-column="23" /></th>
         <th>Conclusion</th>

@@ -5,12 +5,6 @@ module.exports = {
     var title = req.body.title;
     var journal = req.body.journal;
     var year = req.body.year;
-    if (isNaN(req.body.year) || req.body.year === "") {
-      year = 0;
-    } else {
-      year = req.body.year;
-    }
-
     var pdf = req.body.pdf;
     var stage = req.body.stage;
     var molecular_classification = req.body.molecular_classification;
@@ -23,20 +17,7 @@ module.exports = {
     var molecule_name_2 = req.body.molecule_name_2;
     var settting_2 = req.body.settting_2;
     var mPFS_exp = req.body.mPFS_exp;
-    if (isNaN(req.body.mPFS_exp) || req.body.mPFS_exp === "") {
-      mPFS_exp = 0;
-    } else {
-      mPFS_exp = req.body.mPFS_exp;
-    }
-
-
     var mPFS_comp = req.body.mPFS_comp;
-
-    if (isNaN(req.body.mPFS_comp) || req.body.mPFS_comp === "") {
-      mPFS_comp = 0;
-    } else {
-      mPFS_comp = req.body.mPFS_comp;
-    }
 
     var mPFS_HR = req.body.mPFS_HR;
 
@@ -48,20 +29,8 @@ module.exports = {
 
     var mPFS_significance = req.body.mPFS_significance;
     var mOS_exp = req.body.mOS_exp;
-    if (isNaN(req.body.mOS_exp) || req.body.mOS_exp === "") {
-      mOS_exp = 0;
-    } else {
-      mPFS_exp = req.body.mOS_exp;
-    }
-
-
     var mOS_comp = req.body.mOS_comp;
 
-    if (isNaN(req.body.mOS_comp) || req.body.mOS_comp === "") {
-      mOS_comp = 0;
-    } else {
-      mOS_comp = req.body.mOS_comp;
-    }
 
     var mOS_HR = req.body.mOS_HR;
 
@@ -250,12 +219,6 @@ module.exports = {
     var title = req.body.title;
     var journal = req.body.journal;
     var year = req.body.year;
-    var year = req.body.year;
-    if (isNaN(req.body.year) || req.body.year === "") {
-      year = 0;
-    } else {
-      year = req.body.year;
-    }
     var pdf = req.body.pdf;
     var stage = req.body.stage;
     var molecular_classification = req.body.molecular_classification;
@@ -268,20 +231,8 @@ module.exports = {
     var molecule_name_2 = req.body.molecule_name_2;
     var settting_2 = req.body.settting_2;
     var mPFS_exp = req.body.mPFS_exp;
-    if (isNaN(req.body.mPFS_exp) || req.body.mPFS_exp === "") {
-      mPFS_exp = 0;
-    } else {
-      mPFS_exp = req.body.mPFS_exp;
-    }
-
-
     var mPFS_comp = req.body.mPFS_comp;
 
-    if (isNaN(mPFS_comp) || mPFS_comp === "") {
-      mPFS_comp = 0;
-    } else {
-      mPFS_comp = req.body.mPFS_comp;
-    }
 
     var mPFS_HR = req.body.mPFS_HR;
 
@@ -293,20 +244,7 @@ module.exports = {
 
     var mPFS_significance = req.body.mPFS_significance;
     var mOS_exp = req.body.mOS_exp;
-    if (isNaN(req.body.mOS_exp) || req.body.mOS_exp === "") {
-      mOS_exp = 0;
-    } else {
-      mPFS_exp = req.body.mOS_exp;
-    }
-
-
     var mOS_comp = req.body.mOS_comp;
-
-    if (isNaN(req.body.mOS_comp) || req.body.mOS_comp === "") {
-      mOS_comp = 0;
-    } else {
-      mOS_comp = req.body.mOS_comp;
-    }
 
     var mOS_HR = req.body.mOS_HR;
 

@@ -32,17 +32,17 @@ module.exports = {
 
 	settting_2 : { type: 'string'},
 
-	mPFS_exp : { type: 'float'},
+	mPFS_exp : { type: 'string'},
 
-	mPFS_comp : { type: 'float'},
+	mPFS_comp : { type: 'string'},
 
 	mPFS_HR : { type: 'float'},
 
 	mPFS_significance : { type: 'string'},
 
-	mOS_exp : { type: 'float'},
+	mOS_exp : { type: 'string'},
 
-	mOS_comp : { type: 'float'},
+	mOS_comp : { type: 'string'},
 
 	mOS_HR : { type: 'float'},
 
